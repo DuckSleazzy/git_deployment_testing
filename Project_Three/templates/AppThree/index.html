@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<title>Index page</title>
+{% extends "AppThree/base.html" %}
+{% load my_extras %}
+{% block body_block %}
+    <h1>Welcome to Index</h1>
+    <h2>This is an example of template inheritance</h2>
+    <h1>{{ text|le_testing:"worl" }}</h1>
+    <h1>{{ number|add:25 }}</h1>
+{% endblock %}
